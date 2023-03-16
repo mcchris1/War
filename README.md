@@ -1,49 +1,25 @@
 # War
 <!-- Headings -->
 
-# Heading 1
+## What is it good for?
+![War music](https://upload.wikimedia.org/wikipedia/en/2/2e/U2_War_album_cover.jpg)
 
-## Heading 2
-
-### Heading 3
-
-#### Heading 4
-
-##### Heading 5
-
-###### Heading 6
-
-<!-- Italics -->
-
-_This text_ is italic
-
-_This text_ is italic
-
-<!-- Strong -->
-
-**This text** is italic
-
-**This text** is italic
-
-<!-- Strikethrough -->
-
-~~This text~~ is strikethrough
-
-<!-- Horizontal Rule -->
-
+###  ~~Absolutely nothing~~
 ---
 
 ---
+#### The **correct answer** is crude, object-oriented programming simulations reliant on looping
 
-<!-- Blockquote -->
+##### looping
+###### looping
 
-> This is a quote
+> Labour to keep alive in your Breast that Little Spark of Celestial fire Called Conscience. 
 
 <!-- Links -->
 
-[Traversy Media](http://www.traversymedia.com)
+[Pythonian War](https://cis.temple.edu/~wolfgang/cis542/Week02.pdf)
 
-[Traversy Media](http://www.traversymedia.com "Traversy Media")
+
 
 <!-- UL -->
 
@@ -65,7 +41,7 @@ _This text_ is italic
 
 <!-- Images -->
 
-![Markdown Logo](https://markdown-here.com/img/icon256.png)
+
 
 <!-- Github Markdown -->
 
