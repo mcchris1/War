@@ -70,20 +70,32 @@ class GameOfWar {
             }
         }
     
+        if (this.p1.length > 0) {
+            console.log("Player 1 wins the game and has " + this.p1.length + " cards")
+        } else {
+            console.log("Player 2 wins the game and has " + this.p2.length + " cards")
+        }
     }
-// startGame()
-// function startGame() {
-    
-// } 
-//take card from each hand and compare, winner takes all
-//let p1Card = this.p1.pop
-//console.log (p1Card)
-//let p2Card =
-// if(p1Card.value > p2Card.value){
-//     console.log("P1 wins")
-//     this.p1.unshift(p2card, p1card)
-// }else {
-//     war()
-// } ---> LOOP
-// --->clear array, "pile"
-// ---> remove 3 more cards from each hand, add to pile
+
+    war(){
+        console.log("I declare war!!")
+        if (this.p1.length < 4) {
+            // Player 1 loses entire game
+            this.p2.unshift(...this.pile, ...this.p1)
+            this.pile.length = 0
+            this.p1.length = 0
+        } else if (this.p2.length < 4) {
+            // Player 2 loses entire game
+            this.p1.unshift(...this.pile, ...this.p2)
+            this.pile.length = 0
+            this.p2.length = 0
+        } else {
+            let p1Pile = this.p1.splice(this.p1.length - 3, 3)
+            let p2Pile = this.p2.splice(this.p2.length - 3, 3)
+            this.pile.push(...p1Pile, ...p2Pile)
+        }
+    }
+}
+
+let game = new GameOfWar
+game.playGame()
