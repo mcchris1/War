@@ -1,22 +1,7 @@
 //Identify objects, actions, variables  
 
 const SUITS = ['♠', '♥', '♦', '♣'] 
-const RANKS = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K']
-const VALUES = {
-    "2": 2,
-    "3": 3,
-    "4": 4,
-    "5": 5,
-    "6": 6,
-    "7": 7,
-    "8": 8,
-    "9": 9,
-    "10": 10, 
-    "J": 11,
-    "Q": 12,
-    "K": 13,
-    "A": 14,
-}
+const RANKS = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A']
 
 class Card {
     constructor(suit, rank, value){
@@ -28,22 +13,39 @@ class Card {
 
 class Deck {
     constructor(){
-        this.cards = cards;
-        this.freshDeck()
+        this.cards = [];
+        this.makeDeck()
     }
+
     makeDeck() {
-        
+        for (let i=0; i < SUITS.length; i++) {
+            for (let j=0; j < RANKS.length; j++){
+                this.cards.push(new Card(SUITS[i], RANKS[j], j + 2))
+            }
+        }
+
+        this.shuffle()
     }
+
     shuffle() {
-       
+        this.cards = this.cards.sort((a, b) => 0.5 - Math.random());
     }
     
 }
 
-let weDeck
-let theyDeck
-
-startGame()
-function startGame() {
+// startGame()
+// function startGame() {
     
-}
+// } 
+//take card from each hand and compare, winner takes all
+//let p1Card = this.p1.pop
+//console.log (p1Card)
+//let p2Card =
+// if(p1Card.value > p2Card.value){
+//     console.log("P1 wins")
+//     this.p1.unshift(p2card, p1card)
+// }else {
+//     war()
+// } ---> LOOP
+// --->clear array, "pile"
+// ---> remove 3 more cards from each hand, add to pile
