@@ -38,3 +38,5 @@ if (this.p1.length < 4) {
 } else if...
 ```
 <p>The end</p>
+
+<p>End of simulation</p>
