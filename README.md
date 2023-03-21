@@ -1,81 +1,40 @@
 # War
-<!-- Headings -->
 
 ## What is it good for?
 ![War music](https://upload.wikimedia.org/wikipedia/en/2/2e/U2_War_album_cover.jpg)
 
-###  ~~Absolutely nothing~~
----
+<!-- Blockquote -->
+
+> May you dream of the devil and wake in fright.   
 
 ---
-#### The **correct answer** is crude, object-oriented programming simulations reliant on looping
+The [**correct answer**](https://en.wikipedia.org/wiki/War_(band)) is simulations.
 
-##### looping
-###### looping
+<p>Such as:</p>
 
-> Labour to keep alive in your Breast that Little Spark of Celestial fire Called Conscience. 
+- [x] protestin
+- [x] nothin
+- [x] time-killin
 
-<!-- Links -->
+### The rules:
 
-[Pythonian War](https://cis.temple.edu/~wolfgang/cis542/Week02.pdf)
+#### Remember war, the _card game_? Remember _cards_? Sure you do. That. Except without the tedium of actually playing it, or friendship. Just run the program, you ape.
 
+---
+### The OOP Abstracted:
 
+#### Class "Cards" identified by suit, rank; "Deck" by cards contained and method by which it's made: we raondomize it with a shuffle function; "GameOfWar" splices _new_ decks into respective piles for players and discards.
 
-<!-- UL -->
+#### Since the class "Card" is composed of arrays, _for loops_ are implemented to cycle through players' decks.
 
-- Item 1
-- Item 2
-- Item 3
-  - Nested Item 1
-  - Nested Item 2
+#### Comparison statements determine whose "popped" card wins each battle, while "else" signifies there be war, in which case there's a fun bit involving push() to the aforementioned individual piles. 
 
-<!-- OL -->
-
-1. Item 1
-1. Item 2
-1. Item 3
-
-<!-- Inline Code Block -->
-
-`<p>This is a paragraph</p>`
-
-<!-- Images -->
-
-
-
-<!-- Github Markdown -->
-
-<!-- Code Blocks -->
-
-```bash
-  npm install
-  npm start
-```
-
+#### Game runs so long as each player has more than one card, with the exception of an edge case in which one player doesn't have enough cards to go warrin', represented thusly in the case of Player 1's demise: 
 ```javascript
-function add(num1, num2) {
-  return num1 + num2;
-}
+if (this.p1.length < 4) {
+  this.p2.unshift(...this.pile, ...this.p1)
+  this.pile.length = 0
+  this.p1.length = 0
+} else if...
 ```
-
-```python
-  def add(num1, num2):
-    return num1 + num2
-```
-
-<!-- Tables -->
-
-| Day    | Deliverable                                      | Status                |
-| ------ | ------------------------------------------------ | --------------------- |
-| Dec 17 | Prompt/Wireframe/Priority Matrix/Timeframes      | xxx                   |
-| Dec 21 | Project Approval                                 | xxx                   |
-| Dec 22 | Core Application Structure (HTML, CSS, JS, etc.) | xxx                   |
-| Dec 23 | Pseudocode/Actual                                | xxx                   |
-| Dec 23 | 3 hrs                                            | MVP                   |
-| Jan 05 | 3 hrs                                            | Project Presentatiion |
-
-<!-- Task List -->
-
-- [x] Task 1
-- [x] Task 2
-- [] Task 3
+<p>The end</p>
